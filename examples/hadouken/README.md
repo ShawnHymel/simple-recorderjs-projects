@@ -1,4 +1,4 @@
-The HTML for this was stored as a WordPress page, so there was no standalone HTML file. The following appeard as the WordPress written content in HTML format. Note that actual recording was done with the addition of the <button> object at the bottom of the page. User recordings were inserted by code into the <ol id="recordingsList"> section.
+The HTML for this was stored as a WordPress page, so there was no standalone HTML file. The following appeard as the WordPress written content in HTML format. Note that actual recording was done with the addition of the &ltbutton&gt object at the bottom of the page. User recordings were inserted by code into the &ltol id="recordingsList"&gt section.
 
 ```
 <h1>Hadouken</h1>
