@@ -123,7 +123,7 @@ function createDownloadLink(phrase, blob) {
 
 	// Name of .wav file to use during upload and download (without extendion)
 	var datetime = new Date().toISOString();
-	var filename = phrase + "_" + datetime + ".wav";
+	var filename = phrase + "_" + datetime;
 	filename = filename.replace(/:/g, "_");
 	console.log("Creating: " + filename);
 
@@ -133,14 +133,14 @@ function createDownloadLink(phrase, blob) {
 
 	// Save to disk link
 	link.href = url;
-	link.download = filename+".wav";
+	link.download = filename + ".wav";
 	link.innerHTML = "Download";
 
 	// Add the new audio element to li
 	li.appendChild(au);
 	
 	// Add the filename to the li
-	li.appendChild(document.createTextNode(filename))
+	li.appendChild(document.createTextNode(filename + ".wav"))
 
 	// Add the save to disk link to li
 	li.appendChild(link);

@@ -6,7 +6,24 @@
     <body>
         <!-- Describe what you're doing, why, and license of captured audio -->
         <h1>BotWords</h1>
-        <p>Gimme your voice!</p>
+        <p>Thank you for helping out! Just follow the directions below to submit snippets of your voice. These will be used in a machine learning project to make robots respond to specific phrases.</p>
+        <h3>What Are You Making?</h3>
+        <p>I am working on a number of things that I would like to respond to <a href="https://twitter.com/ShawnHymel/status/1273768365014822917">someone shouting "Hadouken!"</a> I am also collaborating with a few of my friends to give voice recognition to their companion bot projects.</p>
+        <img src="images/hadouken-01.gif" alt="Hadouken gif">
+        <p>Jorvon Moss (<a href="https://twitter.com/Odd_Jayy/media">@Odd_Jayy</a>) is working on a number of companion bots. In particular, he is making a <a href="https://www.hackster.io/Odd_Jayy/widget-dragon-companion-bot-83c0c0">dragon</a>. I'll let you guess what happens when someone says "dracarys."</p>
+        <img src="images/jayy-01.jpg" alt="Photo of Jayy and Dexter" width="300">
+        <p>Alex Glow (<a href="https://twitter.com/glowascii">@glowascii</a>) has her owl familiar, <a href="https://www.hackster.io/glowascii/archimedes-the-ai-robot-owl-325ff5">Archimedes</a>, as well as a new fennec fox named "Fenrir." She would like both of these bots to respond to a variety of words (including their names).</p>
+        <img src="images/alex-01.jpg" alt="Photo of Alex and Archimedes" width="300">
+        <h3>How to Participate</h3>
+        <p>Just follow these steps! Please try to make each recording with no background noise, if possible.</p>
+        <p>1. We have several different words or phrases that we'd like you to say. Under each phrase, press the <b>Record</b> button and say the word or phrase. Accept any pop-ups that ask you to use your computer/phone's microphone. Note that timing is sometimes off, as it might take a fraction of a second to actually begin recording. Take look at the browser tab or phone's notification bar: you should see a recording symbol when recording is actually happening.</p>
+        <p>2. Please make several recordings of each word/phrase using different inflections! It will help the training process.</p>
+        <p>3. Play back each recording to make sure that the word or phrase is easily understood (and not truncated).</p>
+        <p>4. For each word or phrase recording that you are happy with, click the <b>Upload to server</b> link next to it.</b></p>
+        <p></p>
+        <h3>License</h3>
+        <p>By uploading your voice, you're giving me consent to use it in an aggregate fashion as part of a machine learning exercise. They will only be used as part of a personal project for non-commercial purposes. Code for the project will be open source and available on GitHub.</p>
+        <p>Audio recordings will be labeled with non-identifying information (so people won't know who is speaking). All recordings will be bundled and available as a .zip file for anyone to download to use in their machine learning projects, similar to the <a href="https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html">Google Speech Commands dataset</a>.</p>
         
         <!-- This gets updated to show format of recorded audio -->
         <h3>Format</h3>
@@ -16,39 +33,47 @@
         <!-- Section template. Note: if "foo" is the button id, it will become the file prefix, and you must use "fooList" for the list id. -->
         <!-- <h3>Title</h3 -->
         <!-- <p>Description of what you want the person to say. Link to example pronunciations. -->
-        <!-- <button class="recordButton" id="foo">Record</button> -->
+        <!-- <button class="recordButton" id="foo" style="height:50px; margin-left:20px;>Record</button> -->
         <!-- <p><strong>Recordings:</strong></p> -->
         <!-- <ol id="fooList"></ol> -->
         
         <!-- Section: Dracarys -->
         <br>
         <h3>Dracarys</h3>
-        <p>Say: "Dracarys!"</p>
-        <button class="recordButton" id="dracarys">Record</button>
+        <p>Say: "Dracarys!" (pronunciation: "drah-KAH-ris." <a href="https://www.youtube.com/watch?v=MZsqHMI3F3g">Here's a video</a>.)</p>
+        <button class="recordButton" id="dracarys" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="dracarysList"></ol>
+        
+        <!-- Section: Hadouken -->
+        <br>
+        <h3>Hadouken</h3>
+        <p>Say: "Hadouken!" (pronunciation: "ha-DOH-ken" or "ha-DEW-ken." <a href="https://www.youtube.com/watch?v=7jgdycXQv80">Here's a video</a>.)</p>
+        <button class="recordButton" id="hadouken" style="height:50px; margin-left:20px;">Record</button>
+        <p><strong>Recordings:</strong></p>
+        <ol id="hadoukenList"></ol>
         
         <!-- Section: Fenrir -->
         <br>
         <h3>Fenrir</h3>
-        <p>Say: "Fenrir"</p>
-        <button class="recordButton" id="fenrir">Record</button>
+        <p>Say: "Fenrir" (pronunciation: "FEN-reer." <a href="https://www.youtube.com/watch?v=ASniqvEr1To">Here's a video</a>.)</p>
+        <button class="recordButton" id="fenrir" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="fenrirList"></ol>
         
         <!-- Section: Archie -->
         <br>
         <h3>Archie</h3>
-        <p>Say: "Archie"</p>
-        <button class="recordButton" id="archie">Record</button>
+        <p>Say: "Archie" (pronunciation: "AR-chee." <a href="https://www.howtopronounce.com/archie">Here's a site</a>.)</p>
+        <button class="recordButton" id="archie" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="archieList"></ol>
         
         <!-- Section: Archimedes -->
         <br>
         <h3>Archimedes</h3>
-        <p>Say: "Archimedes"</p>
-        <button class="recordButton" id="archimedes">Record</button>
+        <p>Say: "Archimedes" (pronunciation: "AR-kuh-mEE-deez." <a href="https://www.youtube.com/watch?v=D6BhZ-M51i8">Here's a video</a>.)</p>
+        <button class="recordButton" id="archimedes" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="archimedesList"></ol>
         
@@ -56,7 +81,7 @@
         <br>
         <h3>Hey Archie</h3>
         <p>Say: "Hey Archie!"</p>
-        <button class="recordButton" id="heyArchie">Record</button>
+        <button class="recordButton" id="heyArchie" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="heyArchieList"></ol>
         
@@ -64,7 +89,7 @@
         <br>
         <h3>Hey Fen</h3>
         <p>Say: "Hey Fen!"</p>
-        <button class="recordButton" id="heyFen">Record</button>
+        <button class="recordButton" id="heyFen" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="heyFenList"></ol>
         
@@ -72,7 +97,7 @@
         <br>
         <h3>Hey Fenrir</h3>
         <p>Say: "Hey Fenrir!"</p>
-        <button class="recordButton" id="heyFenrir">Record</button>
+        <button class="recordButton" id="heyFenrir" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="heyFenrirList"></ol>
         
@@ -80,7 +105,7 @@
         <br>
         <h3>Goodnight</h3>
         <p>Say: "Goodnight"</p>
-        <button class="recordButton" id="goodnight">Record</button>
+        <button class="recordButton" id="goodnight" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="goodnightList"></ol>
         
@@ -88,16 +113,20 @@
         <br>
         <h3>How are you?</h3>
         <p>Say: "How are you?"</p>
-        <button class="recordButton" id="howAreYou">Record</button>
+        <button class="recordButton" id="howAreYou" style="height:50px; margin-left:20px;">Record</button>
         <p><strong>Recordings:</strong></p>
         <ol id="howAreYouList"></ol>
         
+        <!-- Credits -->
+        <br>
+        <p>This page is based on the <a href="https://github.com/addpipe/simple-recorderjs-demo">simple-recorder-js demo project</a>. Many thanks to <a href="https://github.com/ajaswa">Andrew Jaswa</a> for helping me modify that demo project into what you see here.</p>
+        
+        <!-- Copyright notice -->
+        <br>
+        <p>Copyright 2020 | Shawn Hymel</p>
+        
         <!-- Scripts to run. Make sure these are listed at the end of HTML -->
-        <p>
-            <br>
-            <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
-            <br>
-            <script src="https://shawnhymel.com/botwords/js/app.js"></script>
-        </p>
+        <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <script src="https://shawnhymel.com/botwords/js/app.js"></script>
     </body>
 </html>
